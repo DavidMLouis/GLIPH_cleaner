@@ -41,4 +41,4 @@ clean_input <- GLIPH_cleaner(input_file)
 
 ############################### Outputs #################################
 
-write.csv(clean_input, file = paste0("clean_", cmd_args), quote = F, row.names = F)
+write.csv(clean_input, file = paste0("clean_", gsub("^.*/", "", cmd_args)), quote = F, row.names = F)
